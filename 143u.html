@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Surprise for Grape😘</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #8B008B, #FF69B4); /* Dark Purple to Pink */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 242px;
+  }
+  #questionBox {
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    text-shadow: 2px 2px 5px #330033;
+  }
+  p {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    text-shadow: 1px 1px 3px #660066;
+  }
+  button {
+    background-color: #cc66ff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(102, 0, 102, 0.7);
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #ff66cc;
+  }
+  #surpriseContent {
+    display: none;
+  }
+  #secretMessage {
+    margin-top: 30px;
+    font-size: 1.8em;
+    color: #ffe6ff;
+    display: none;
+    text-shadow: 2px 2px 5px #330033;
+  }
+</style>
+</head>
+<body>
+
+<div id="questionBox">
+  <h1>Do you love me?</h1>
+  <button id="yesBtn">Yes</button>
+  <button id="noBtn">No</button>
+</div>
+
+<div id="surpriseContent">
+  <h1>Hello, Grape! 💜</h1>
+  <p>This surprise website was made just for you!</p>
+  <button id="revealBtn">Reveal Your Secret Message</button>
+  <div id="secretMessage">
+    Hai Grape (Meenakshi),
+    I don’t know how to explain this, but I really didn’t expect to fall for you 🥰. <br>
+    Back in 11th grade, I saw your photo on the student council chart near the nurse’s office. Whenever I went to pay the fees, 
+    I’d see you Photo.  I think I started to have feelings for you after I broke up with my ex, but I thought it was just a mix 
+    of emotions in my heart, so I didn’t pay much attention to it at first. But the feeling stayed.<br>  
+    Now, when I look back to it, I realize I liked you from the start. I used to feel I wasn’t good enough for you and that you didn’t 
+    like me. But now, somehow, you like — and I like you… no, I LOVE you 😘.<br>  
+    I’ve never felt this kind of love before, but you made me experience something completely new, and I’m so happy because of 
+    it. I know it’s only been two weeks, but I feel like I want to be with you forever — til we get married. I really love you.
+    <br>I LOVE YOU SOO MUCH MEENAKSHI
+    <br>😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘
+  </div>
+</div>
+
+<script>
+  document.getElementById('yesBtn').onclick = function() {
+    document.getElementById('questionBox').style.display = 'none';
+    document.getElementById('surpriseContent').style.display = 'block';
+  };
+
+  document.getElementById('noBtn').onclick = function() {
+    this.style.display = 'none';
+  };
+
+  document.getElementById('revealBtn').onclick = function() {
+    document.getElementById('secretMessage').style.display = 'block';
+    this.style.display = 'none';
+  };
+</script>
+
+</body>
+</html>
